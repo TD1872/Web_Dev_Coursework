@@ -1,0 +1,53 @@
+<!-- recipe.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="recipe-style.css">
+</head>
+
+    <nav>
+        <a href="index.html" class="link">Home</a> |
+        <a href="about.html" class="link">About Us</a> |
+        <a href="how-to-cook.html" class="link">How to Cook</a> |
+        <a href="seasonal.html" class="link">Seasonal Choices</a>
+    </nav>
+
+<body>
+    <div class="container">
+        <h1>Recipe Details</h1>
+        <div id="recipeDetails"></div>
+        <p>Please make your way to the <a href="how-to-cook.html" class="link">How to Cook</a> page for further details on your given meal.</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const recipeIndex = params.get('recipe');
+            displayRecipe(recipeIndex);
+        }
+
+        function displayRecipe(index) {
+            const recipe = recipes[index];
+            const recipeDetails = document.getElementById('recipeDetails');
+            if (recipe) {
+                let html = `<h2>${recipe.name}</h2>`;
+                html += '<h3>Ingredients:</h3><ul>';
+                recipe.ingredients.forEach(ingredient => {
+                    html += `<li>${ingredient}</li>`;
+                });
+                html += '</ul>';
+                recipeDetails.innerHTML = html;
+            } else {
+                recipeDetails.innerHTML = '<p>Recipe not found</p>';
+            }
+
+        }
+
+       
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recipe Roulette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Roulette</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="about.html" class="link">About Us</a></li>
+                    <li><a href="how-to-cook.html" class="link">How to Cook</a></li>
+                    <li><a href="seasonal.html" class="link">Seasonal Choices</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="center-content">
+            <button id="spinButton">Spin for a Recipe</button>
+            <div id="recipeDisplay">
+                <img src="roulette-table.jpeg" alt="Roulette Table" class="roulette-image">
+                <h2 id="recipeTitle"></h2>
+                
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Spin the wheel.</li>
+                    <li>Click the link of the meal given from the roulette.</li>
+                    <li>Enter the recipe page.</li>
+                    <li>Gather the ingredients given.</li>
+                    <li>Make your way to the how-to-cook page for all the info.</li>
+                    <li>Find your given meal (link below it to YouTube video for tutorial).</li>
+                    <li>Follow the tutorial.</li>
+                    <li>Finally serve hot (or cold) and enjoy!</li>
+                </ol>
+                
+                <p><img src="book.jpeg" alt="Recipe Image" class="recipe-image"></p>
+                <p id="recipeIngredients"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

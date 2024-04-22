@@ -1,0 +1,48 @@
+/* recipe-styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf605;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+    h1 {
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: #faf605; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 0px;
+    }
+
+
+#recipeDisplay {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+li {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+ul { 
+    list-style-type: none;
+}
